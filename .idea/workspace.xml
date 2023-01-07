@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb84bb4e-8470-45b7-b6c9-2f768c16b44b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/ExitStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Helpers/ExceptionHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Helpers/IOHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Helpers/JsonHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Postgres/PostgresCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Utilities/ConsoleAttribute.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Utilities/LogLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Utilities/LogPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Utilities/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/psql.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Postgres/PostgresCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Postgres/PostgresCredentials.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/System.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/calgrimes/librarymanagementsystem/system.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/calgrimes/librarymanagementsystem/system.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +90,7 @@
       <workItem from="1673015551019" duration="1871000" />
       <workItem from="1673017725387" duration="7231000" />
       <workItem from="1673099849064" duration="71000" />
-      <workItem from="1673101236861" duration="7796000" />
+      <workItem from="1673101236861" duration="8003000" />
     </task>
     <servers />
   </component>
