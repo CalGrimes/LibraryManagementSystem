@@ -1,0 +1,7 @@
+{
+  "ip": "localhost",
+  "database": "librarymanagement",
+  "username": "postgres",
+  "password": "postgres",
+  "schema": "librarymanagement"
+}

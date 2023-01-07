@@ -1,14 +1,13 @@
 package com.calgrimes.librarymanagementsystem.Postgres;
 
+import com.calgrimes.librarymanagementsystem.ExitStatus;
+import com.calgrimes.librarymanagementsystem.Helpers.JsonHelper;
+import com.calgrimes.librarymanagementsystem.Utilities.LogLevel;
+import com.calgrimes.librarymanagementsystem.Utilities.Logger;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-// TODO: Logger
 public class PostgresCredentials {
-
-
     String ip;
     String database;
     String schema;
@@ -30,13 +29,11 @@ public class PostgresCredentials {
 
     public PostgresCredentials load(String path)
     {
-
         if (Files.notExists(Path.of(path)))
         {
-            Logger.logf("Unable to load Postgres credentials: %s", LogLevel.ERROR, path);
+            Logger.logf("Unable to load Postgres credentials: %s%n", path, LogLevel.ERROR);
             System.exit(ExitStatus.ERROR.get());
         }
-
         return JsonHelper.deserialise(path, PostgresCredentials.class);
     }
 

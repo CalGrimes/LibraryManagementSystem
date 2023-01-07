@@ -15,13 +15,13 @@
             <TableColumn fx:id="tblcPrice" prefWidth="111.0" resizable="false" text="Price" />
         </columns>
       </TableView>
-      <Button fx:id="btnViewBooks" layoutX="21.0" layoutY="40.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #ebcbb5;" text="View Books" textFill="#39221c" />
-      <Button fx:id="btnViewUsers" layoutX="21.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #ebcbb5;" text="View Users" textFill="#39221c" />
-      <Button fx:id="btnViewIssuedBooks" layoutX="21.0" layoutY="105.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #ebcbb5;" text="View Issued Book" textFill="#39221c" />
-      <Button fx:id="btnAddBook" layoutX="21.0" layoutY="162.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #ebcbb5;" text="Add Book" textFill="#39221c" />
-      <Button fx:id="btnAddUser" layoutX="21.0" layoutY="195.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #ebcbb5;" text="Add User" textFill="#39221c" />
-      <Button fx:id="btnIssueBook" layoutX="21.0" layoutY="253.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #ebcbb5;" text="Issue Book" textFill="#39221c" />
-      <Button fx:id="btnReturnBook" layoutX="21.0" layoutY="286.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #ebcbb5;" text="Return Book" textFill="#39221c" />
-      <Button fx:id="btnCreateSchema" layoutX="21.0" layoutY="360.0" mnemonicParsing="false" onAction="#createSchema" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #ebcbb5;" text="Create / Reset DB" textFill="#39221c" />
+      <Button fx:id="btnViewBooks" layoutX="7.0" layoutY="40.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #ebcbb5;" text="View Books" textFill="#39221c" />
+      <Button fx:id="btnViewUsers" layoutX="7.0" layoutY="72.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #ebcbb5;" text="View Users" textFill="#39221c" />
+      <Button fx:id="btnViewIssuedBooks" layoutX="7.0" layoutY="105.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #ebcbb5;" text="View Issued Book" textFill="#39221c" />
+      <Button fx:id="btnAddBook" layoutX="7.0" layoutY="162.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #ebcbb5;" text="Add Book" textFill="#39221c" />
+      <Button fx:id="btnAddUser" layoutX="7.0" layoutY="195.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #ebcbb5;" text="Add User" textFill="#39221c" />
+      <Button fx:id="btnIssueBook" layoutX="7.0" layoutY="253.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #ebcbb5;" text="Issue Book" textFill="#39221c" />
+      <Button fx:id="btnReturnBook" layoutX="7.0" layoutY="286.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #ebcbb5;" text="Return Book" textFill="#39221c" />
+      <Button fx:id="btnCreateSchema" layoutX="7.0" layoutY="359.0" mnemonicParsing="false" onAction="#createSchema" prefHeight="25.0" prefWidth="140.0" style="-fx-background-color: #ebcbb5;" text="Create / Reset Schema" textFill="#39221c" />
    </children>
 </Pane>

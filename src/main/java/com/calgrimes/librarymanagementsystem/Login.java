@@ -1,12 +1,13 @@
 package com.calgrimes.librarymanagementsystem;
 
-import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class Login {
     @FXML
@@ -27,7 +28,7 @@ public class Login {
 
     private void checkLogin() throws IOException {
         Main m = new Main();
-        if (this.txtUsername.getText().toString().equals("javacoding") && this.txtPassword.getText().toString().equals("123")) {
+        if (this.txtUsername.getText().toString().equals("a") && this.txtPassword.getText().toString().equals("a")) {
             this.lblLoginErr.setText("Success!");
             m.changeScene("system.fxml");
         } else if (this.txtUsername.getText().isEmpty() && this.txtPassword.getText().isEmpty()) {
