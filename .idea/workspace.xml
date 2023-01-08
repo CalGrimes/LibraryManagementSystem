@@ -4,21 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb84bb4e-8470-45b7-b6c9-2f768c16b44b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="3113925f-bf96-401c-9dc2-a4d4898899d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Helpers/DialogHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/open-book.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/System.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="PowerShell File" />
         <option value="Class" />
       </list>
     </option>
@@ -29,8 +31,20 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2JgooeTDHQGWBuMT5cqcALdk9Lk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2K3Djmhu1ZCWlPdd6p3MkfDAA5k" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,38 +53,27 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/calgr/OneDrive - calgrimes29/OneDrive/Documents/LibraryManagementSystem/src/main/resources/com/calgrimes/librarymanagementsystem/login.fxml",
+    "last_opened_file_path": "F:/calgr/OneDrive - calgrimes29/OneDrive/Documents/LibraryManagementSystem/src/main/resources/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\java\com\calgrimes\librarymanagementsystem\Utilities" />
+      <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\resources\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\resources" />
-      <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\java\com\calgrimes\librarymanagementsystem" />
-      <recent name="C:\Users\calgr\OneDrive\Documents\PersonalWork\LibraryManagementSystem\lib" />
-      <recent name="C:\Users\calgr\OneDrive\Documents\PersonalWork\LibraryManagementSystem\src\main\java\com\calgrimes\librarymanagementsystem" />
-      <recent name="C:\Users\calgr\OneDrive\Documents\PersonalWork\LibraryManagementSystem\src\main\resources\com\calgrimes\librarymanagementsystem" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.calgrimes.librarymanagementsystem.Postgres" />
+      <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\resources\img" />
+      <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\resources\com\calgrimes\librarymanagementsystem" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Run" type="Application" factoryName="Application">
+    <configuration name="Run LibraryManagementSystem" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.calgrimes.librarymanagementsystem.Main" />
       <module name="LibraryManagementSystem" />
       <method v="2">
@@ -81,38 +84,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cb84bb4e-8470-45b7-b6c9-2f768c16b44b" name="Changes" comment="" />
-      <created>1672509263408</created>
+      <changelist id="3113925f-bf96-401c-9dc2-a4d4898899d7" name="Changes" comment="" />
+      <created>1673194511267</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1672509263408</updated>
-      <workItem from="1672945679182" duration="1876000" />
-      <workItem from="1673015551019" duration="1871000" />
-      <workItem from="1673017725387" duration="7231000" />
-      <workItem from="1673099849064" duration="71000" />
-      <workItem from="1673101236861" duration="8003000" />
+      <updated>1673194511267</updated>
+      <workItem from="1673194513454" duration="4165000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="obj2" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

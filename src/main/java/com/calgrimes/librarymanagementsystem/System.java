@@ -4,7 +4,11 @@ import com.calgrimes.librarymanagementsystem.Postgres.PostgresCode;
 import com.calgrimes.librarymanagementsystem.Postgres.PostgresCredentials;
 import com.calgrimes.librarymanagementsystem.Utilities.LogLevel;
 import com.calgrimes.librarymanagementsystem.Utilities.Logger;
+import com.calgrimes.librarymanagementsystem.Helpers.DialogHelper;
+
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import org.jooq.DSLContext;
 import org.jooq.impl.DSL;
 
@@ -19,6 +23,7 @@ public class System {
 
 
     public System() {
+
     }
 
     public void createSchema(ActionEvent event) throws IOException {
@@ -70,8 +75,8 @@ public class System {
             exception.printStackTrace();
             java.lang.System.exit(ExitStatus.CRITICAL.get());
         }
-
-
-        return;
+        finally {
+            DialogHelper.showAlertCompletion("Create / Reset Schema Execution Complete.");
+        }
     }
 }

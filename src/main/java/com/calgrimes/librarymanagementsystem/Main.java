@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.image.Image;
 import org.jooq.SQLDialect;
 
 import java.io.IOException;
@@ -17,17 +18,19 @@ public class Main extends Application {
 
     public static final boolean DEBUG = true;
     public static final SQLDialect dialect = SQLDialect.POSTGRES;
-    private static Stage stg;
+    public static Stage stg;
 
     @Override
     public void start(Stage primaryStage) throws IOException {
         Logger.log("Starting Program.", LogLevel.UTILITY);
 
         stg = primaryStage;
+
         primaryStage.setResizable(false);
         Parent root = (Parent)FXMLLoader.load(this.getClass().getResource("login.fxml"));
         primaryStage.setTitle("Library Management System");
         primaryStage.setScene(new Scene(root, 600.0, 400.0));
+        primaryStage.getIcons().add(new Image(this.getClass().getResource("/img/open-book.png").toString()));
         primaryStage.show();
     }
     public void changeScene(String fxml) throws IOException {
