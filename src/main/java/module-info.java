@@ -12,9 +12,12 @@ module com.calgrimes.librarymanagementsystem {
     requires org.apache.commons.io;
     requires org.apache.commons.lang3;
     requires json.simple;
+    requires org.postgresql.jdbc;
+    requires java.naming;
 
 
     opens com.calgrimes.librarymanagementsystem.Postgres to com.google.gson;
+    opens com.calgrimes.librarymanagementsystem.DBObjects to com.google.gson;
     opens com.calgrimes.librarymanagementsystem to javafx.fxml;
     exports com.calgrimes.librarymanagementsystem;
 }

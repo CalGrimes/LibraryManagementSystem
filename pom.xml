@@ -98,6 +98,7 @@
             <artifactId>progressbar</artifactId>
             <version>0.9.3</version>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -132,6 +133,22 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.calgrimes.librarymanagementsystem.Main</mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <finalName>LibraryManagementSystem</finalName>
+                </configuration>
             </plugin>
         </plugins>
     </build>

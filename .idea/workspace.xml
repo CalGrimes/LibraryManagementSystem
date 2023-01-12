@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3113925f-bf96-401c-9dc2-a4d4898899d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Helpers/DialogHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/open-book.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/DBObjects/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Helpers/ResourceHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Postgres/Method.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Helpers/DialogHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Helpers/DialogHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Postgres/PostgresCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Postgres/PostgresCredentials.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/System.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/calgrimes/librarymanagementsystem/system.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/calgrimes/librarymanagementsystem/system.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/psql.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -49,27 +56,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/calgr/OneDrive - calgrimes29/OneDrive/Documents/LibraryManagementSystem/src/main/resources/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/calgr/OneDrive - calgrimes29/OneDrive/Documents/LibraryManagementSystem&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\resources\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\bin" />
       <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\resources\img" />
       <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\resources\com\calgrimes\librarymanagementsystem" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.calgrimes.librarymanagementsystem.Helpers" />
     </key>
   </component>
   <component name="RunManager">
@@ -89,7 +100,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673194511267</updated>
-      <workItem from="1673194513454" duration="4165000" />
+      <workItem from="1673194513454" duration="6685000" />
+      <workItem from="1673251255100" duration="3856000" />
+      <workItem from="1673285860405" duration="5928000" />
+      <workItem from="1673336602445" duration="3986000" />
+      <workItem from="1673423955248" duration="3435000" />
+      <workItem from="1673465234587" duration="867000" />
+      <workItem from="1673511268270" duration="6745000" />
     </task>
     <servers />
   </component>

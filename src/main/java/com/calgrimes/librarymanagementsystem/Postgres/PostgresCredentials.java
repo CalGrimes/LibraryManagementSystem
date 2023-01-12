@@ -5,8 +5,11 @@ import com.calgrimes.librarymanagementsystem.Helpers.JsonHelper;
 import com.calgrimes.librarymanagementsystem.Utilities.LogLevel;
 import com.calgrimes.librarymanagementsystem.Utilities.Logger;
 
+import javax.sql.DataSource;
+import org.postgresql.ds.PGSimpleDataSource;
 import java.nio.file.Files;
 import java.nio.file.Path;
+
 public class PostgresCredentials {
     String ip;
     String database;
@@ -14,10 +17,12 @@ public class PostgresCredentials {
     String username;
     String password;
 
+    DataSource datasource;
+
+
     public PostgresCredentials() { }
 
-    public PostgresCredentials(String path)
-    {
+    public PostgresCredentials(String path) {
         var pc = load(path);
 
         ip       = pc.getIp();
@@ -25,6 +30,20 @@ public class PostgresCredentials {
         schema   = pc.getSchema();
         username = pc.getUsername();
         password = pc.getPassword();
+
+        datasource = createDataSource();
+
+    }
+
+    protected DataSource createDataSource() {
+        PGSimpleDataSource datasource = new PGSimpleDataSource();
+        datasource.setServerName(ip);
+        datasource.setUser(username);
+        datasource.setPassword(password);
+        datasource.setDatabaseName(database);
+        datasource.setCurrentSchema(schema);
+
+        return datasource;
     }
 
     public PostgresCredentials load(String path)
@@ -60,5 +79,9 @@ public class PostgresCredentials {
     public String getPassword()
     {
         return password;
+    }
+
+    public DataSource getDatasource() {
+        return datasource;
     }
 }
