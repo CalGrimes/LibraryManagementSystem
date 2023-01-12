@@ -14,6 +14,7 @@ module com.calgrimes.librarymanagementsystem {
     requires json.simple;
     requires org.postgresql.jdbc;
     requires java.naming;
+    requires org.jetbrains.annotations;
 
 
     opens com.calgrimes.librarymanagementsystem.Postgres to com.google.gson;

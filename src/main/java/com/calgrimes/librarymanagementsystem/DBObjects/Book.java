@@ -4,25 +4,64 @@ import com.google.gson.Gson;
 
 public class Book {
 
-    private int book_id;
+    private int bookId;
 
-    private String book_name;
+    private String bookTitle;
 
-    private String book_genre;
+    private String authorFirst;
 
-    private double book_price;
+    private String authorLast;
+
+    private String bookGenre;
+
+    private double bookPrice;
 
 
     public Book() {
 
     }
 
-    public Book(int book_id, String book_name, String book_genre, double book_price) {
-        this.book_id = book_id;
-        this.book_name = book_name;
-        this.book_genre = book_genre;
-        this.book_price = book_price;
+    public Book(int bookId, String bookTitle, String authorFirst, String authorLast, String bookGenre, double bookPrice) {
+        this.bookId = bookId;
+        this.bookTitle = bookTitle;
+        this.authorFirst = authorFirst;
+        this.authorLast = authorLast;
+        this.bookGenre = bookGenre;
+        this.bookPrice = bookPrice;
 
     }
+
+    public int getBookId()
+    {
+        return bookId;
+    }
+    public String getBookTitle()
+    {
+        return bookTitle;
+    }
+    public String getAuthorFirst()
+    {
+        return authorFirst;
+    }
+    public String getAuthorLast()
+    {
+        return authorLast;
+    }
+    public String getBookGenre()
+    {
+        return bookGenre;
+    }
+    public double getBookPrice()
+    {
+        return bookPrice;
+    }
+
+
+
+
+
+
+
+
 
 }

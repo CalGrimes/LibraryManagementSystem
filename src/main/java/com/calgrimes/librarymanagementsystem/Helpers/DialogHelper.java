@@ -13,6 +13,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.paint.RadialGradient;
 import javafx.stage.Stage;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 import java.util.Optional;
@@ -39,12 +40,12 @@ public class DialogHelper {
         alert.setContentText(contentText);
         alert.showAndWait();
     }
-
+    @NotNull
     private static Dialog<?> setupDialog(String title, String headerText)
     {
         Dialog<?> dialog = new Dialog<>();
         dialog.setTitle(title);
-        dialog.setHeaderText(title);
+        dialog.setHeaderText(headerText);
 
         // Set the system icon of the dialog
         dialog.initOwner(Main.stg);
@@ -53,7 +54,7 @@ public class DialogHelper {
     }
 
 
-    public static Optional<Book> showAddBook() {
+    public static Optional<Book> showAddBook(int bookId) {
         // Create the custom dialog.
         Dialog<Book> dialog = (Dialog<Book>) setupDialog("Add Book", "Please enter the book information:");
 
@@ -73,18 +74,22 @@ public class DialogHelper {
         GridPane grid = new GridPane();
         grid.setHgap(10);
         grid.setVgap(10);
-        grid.getColumnConstraints().addAll( new ColumnConstraints( 60 ), col1, new ColumnConstraints( 50 ), col2 );
+        grid.getColumnConstraints().addAll( new ColumnConstraints( 120 ), col1, new ColumnConstraints( 50 ), col2 );
         grid.setPadding(new Insets(20, 150, 10, 10));
 
         TextField bookIdField = new TextField();
         bookIdField.setPromptText("0");
-        bookIdField.setText("0");
-        TextField bookNameField = new TextField();
-        bookNameField.setPromptText("Harry Potter");
+        bookIdField.setText(String.valueOf(bookId));
+        TextField bookTitleField = new TextField();
+        bookTitleField.setPromptText("Harry Potter");
+        TextField bookAuthFirstNameField = new TextField();
+        bookAuthFirstNameField.setPromptText("J. K.");
+        TextField bookAuthLastNameField = new TextField();
+        bookAuthLastNameField.setPromptText("Rowling");
         TextField bookGenreField = new TextField();
         bookGenreField.setPromptText("Fantasy");
         TextField bookPriceField = new TextField();
-        bookPriceField.setPromptText("12.99");
+        bookPriceField.setPromptText("£12.99");
 
         // Disable the bookIdField
         bookIdField.setMouseTransparent(true);
@@ -92,17 +97,21 @@ public class DialogHelper {
 
         grid.add(new Label("ID:"), 0, 0);
         grid.add(bookIdField, 1, 0);
-        grid.add(new Label("Name:"), 0, 1);
-        grid.add(bookNameField, 1, 1);
-        grid.add(new Label("Genre:"), 0, 2);
-        grid.add(bookGenreField, 1, 2);
-        grid.add(new Label("Price:"), 0, 3);
-        grid.add(bookPriceField, 1, 3);
+        grid.add(new Label("Title:"), 0, 1);
+        grid.add(bookTitleField, 1, 1);
+        grid.add(new Label("Author First Name:"), 0, 2);
+        grid.add(bookAuthFirstNameField, 1, 2);
+        grid.add(new Label("Author Last Name:"), 0, 3);
+        grid.add(bookAuthLastNameField, 1, 3);
+        grid.add(new Label("Genre:"), 0, 4);
+        grid.add(bookGenreField, 1, 4);
+        grid.add(new Label("Price:"), 0, 5);
+        grid.add(bookPriceField, 1, 5);
 
         dialog.getDialogPane().setContent(grid);
 
         // Request focus on the book_name field by default.
-        Platform.runLater(() -> bookNameField.requestFocus());
+        Platform.runLater(() -> bookTitleField.requestFocus());
 
         bookPriceField.textProperty().addListener((observable, oldValue, newValue) -> {
             // Regular expression to match GBP Pound format
@@ -121,11 +130,15 @@ public class DialogHelper {
         // Convert the result to a book when the add button is clicked.
         dialog.setResultConverter(dialogButton -> {
             if (dialogButton == addButtonType) {
-                // Parse bookId to int
-                int bookId = Integer.parseInt(bookIdField.getText());
 
                 // Check other fields are not empty
-                List<String> editableFields = List.of(bookNameField.getText(), bookGenreField.getText(), bookPriceField.getText());
+                List<String> editableFields = List.of(
+                        bookTitleField.getText(),
+                        bookAuthFirstNameField.getText(),
+                        bookAuthLastNameField.getText(),
+                        bookGenreField.getText(),
+                        bookPriceField.getText()
+                        );
 
                 // Check if any editable field in the dialog shown is empty.
                 if (editableFields.stream().anyMatch(String::isEmpty))
@@ -138,7 +151,13 @@ public class DialogHelper {
                     // Validate bookPrice and return a new Book object.
                     if (bookPriceField.getStyle().contains("-fx-border-color: green;")) {
                         double bookPrice = Double.parseDouble(bookPriceField.getText().substring(1));
-                        return new Book(bookId, bookNameField.getText(), bookGenreField.getText(), bookPrice);
+                        return new Book(
+                                bookId,
+                                bookTitleField.getText(),
+                                bookAuthFirstNameField.getText(),
+                                bookAuthLastNameField.getText(),
+                                bookGenreField.getText(),
+                                bookPrice);
                     } else {
                         // Input is invalid
                         Logger.log("Please enter a valid GBP Pound amount in the format '£X.XX'", LogLevel.ERROR);
