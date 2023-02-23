@@ -1,0 +1,15 @@
+.dialog-pane {
+    -fx-background-color: #39221c;
+}
+
+.header-panel {
+    -fx-background-color: #39221c;
+}
+
+.border-green {
+    -fx-border-color: green;
+}
+
+.border-red {
+    -fx-border-color: red;
+}
