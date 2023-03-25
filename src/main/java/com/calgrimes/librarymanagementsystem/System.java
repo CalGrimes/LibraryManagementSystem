@@ -10,15 +10,13 @@ import com.calgrimes.librarymanagementsystem.Utilities.Logger;
 import com.calgrimes.librarymanagementsystem.Helpers.DialogHelper;
 
 import com.google.gson.Gson;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import org.jooq.DSLContext;
-import org.jooq.Query;
-import org.jooq.Record6;
-import org.jooq.Table;
+import org.jooq.*;
+import org.jooq.Record;
 import org.jooq.impl.DSL;
-import org.jooq.impl.QOM;
 
 import static org.jooq.impl.DSL.*;
 import static org.jooq.impl.SQLDataType.*;
@@ -103,6 +101,54 @@ public class System {
 
     }
 
+    private Result<Record> selectAllBooks(DSLContext dslContext, String schema) {
+        Logger.log("Fetching Books...", LogLevel.DEBUG);
+
+        // Execute Select Statement
+        Result<Record> res = dslContext.select().from(schema + StringHelper.referenceTableName(TableName.BOOK)).fetch();
+        return res;
+
+
+    }
+
+    private void displayBooks(Result<Record> books) {
+        // Store result as book object
+        for (int i = 0; i < books.size(); i++) {
+            Record record = books.get(i);
+//            return new Book(record.get);
+        }
+
+
+        // Set to tableView
+//        tblvBooks.getColumns().add(books);
+//        ObservableList check = tblvBooks.getColumns();
+        // TODO: Show row
+        this.tblvBooks.getItems().add(books);
+
+    }
+
+    public void viewBooks(){
+        DataSource ds = credentials.getDatasource();
+        try {
+            Connection conn = ds.getConnection();
+            String schema = credentials.getSchema();
+
+            DSLContext dslContext = DSL.using(conn, dialect);
+
+            try {
+                Result<Record> books = selectAllBooks(dslContext, schema);
+                displayBooks(books);
+            }
+            catch (RuntimeException e){
+                Logger.logf("%s schema does not exist.", LogLevel.WARNING, schema);
+            }
+
+            Logger.log("Books Displayed.", LogLevel.DEBUG);
+
+        } catch (SQLException e) {
+            Logger.logf("Failed PostgreSQL Execution. Error: %s", LogLevel.ERROR, PostgresCode.of(e.getSQLState()));
+        }
+    }
 
     public void addBook() {
         // Get the highest ID number from the table and add 1
@@ -142,6 +188,14 @@ public class System {
                 .constraints(
                         constraint("book_pk").primaryKey("book_id")
                 ).execute();
+
+        dslContext.createView("viewBooks")
+                        .as(
+                                dslContext.select().from(
+                                        schema + StringHelper.referenceTableName(TableName.BOOK)
+                                )
+                        )
+                .execute();
 
         Logger.logf("%s schema created.", LogLevel.DEBUG, schema);
     }

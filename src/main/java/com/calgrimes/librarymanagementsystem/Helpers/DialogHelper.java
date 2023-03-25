@@ -6,15 +6,12 @@ import com.calgrimes.librarymanagementsystem.Utilities.LogLevel;
 import com.calgrimes.librarymanagementsystem.Utilities.Logger;
 import javafx.application.Platform;
 import javafx.geometry.Insets;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
-import javafx.scene.layout.ColumnConstraints;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Priority;
-import javafx.scene.paint.RadialGradient;
-import javafx.stage.Stage;
+import javafx.scene.layout.*;
 import org.jetbrains.annotations.NotNull;
 
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.Optional;
 import java.util.regex.Matcher;

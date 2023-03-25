@@ -5,15 +5,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3113925f-bf96-401c-9dc2-a4d4898899d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Helpers/StringHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Postgres/TableName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/build.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/NOTICE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/RELEASENOTES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-checker-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-codegen-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-codegen-maven-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-jackson-extensions-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-kotlin-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-kotlin-coroutines-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-meta-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-meta-extensions-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-meta-extensions-hibernate-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-meta-extensions-liquibase-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-postgres-extensions-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-scala_2.13-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-javadoc/jooq-xtend-3.17.6-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jakarta.xml.bind-api-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-checker-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-codegen-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-codegen-maven-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-jackson-extensions-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-kotlin-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-kotlin-coroutines-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-meta-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-meta-extensions-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-meta-extensions-hibernate-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-meta-extensions-liquibase-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-postgres-extensions-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-scala_2.13-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/jooq-xtend-3.17.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/r2dbc-spi-0.9.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-lib/reactive-streams-1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-checker/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-codegen-maven/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-codegen/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-jackson-extensions/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-kotlin-coroutines/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-kotlin/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-meta-extensions-hibernate/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-meta-extensions-liquibase/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-meta-extensions/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-meta/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-postgres-extensions/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-scala_2.13/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq-xtend/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/jooq/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-pom/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jakarta.xml.bind-api-3.0.0-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-3.17.6-all-sources.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-checker-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-codegen-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-codegen-maven-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-jackson-extensions-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-kotlin-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-kotlin-coroutines-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-meta-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-meta-extensions-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-meta-extensions-hibernate-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-meta-extensions-liquibase-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-postgres-extensions-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-scala_2.13-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/jooq-xtend-3.17.6-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/r2dbc-spi-0.9.1.RELEASE-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/jOOQ-src/reactive-streams-1.0.3-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/maven-deploy.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/maven-deploy.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/maven-install.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jOOQ-3.17.6/maven-install.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/DBObjects/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/DBObjects/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Helpers/DialogHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/Helpers/DialogHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/calgrimes/librarymanagementsystem/System.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/calgrimes/librarymanagementsystem/system.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/calgrimes/librarymanagementsystem/system.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,30 +119,32 @@
     </option>
   </component>
   <component name="ProjectId" id="2K3Djmhu1ZCWlPdd6p3MkfDAA5k" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/calgr/OneDrive - calgrimes29/OneDrive/Documents/LibraryManagementSystem",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/calgr/OneDrive/Documents/PersonalWork/NewestSite/craftzdog-homepage&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\resources\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\resources" />
       <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\bin" />
       <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\resources\img" />
       <recent name="F:\calgr\OneDrive - calgrimes29\OneDrive\Documents\LibraryManagementSystem\src\main\resources\com\calgrimes\librarymanagementsystem" />
@@ -105,11 +177,22 @@
       <workItem from="1673423955248" duration="3435000" />
       <workItem from="1673465234587" duration="867000" />
       <workItem from="1673511268270" duration="22741000" />
+      <workItem from="1674064881708" duration="867000" />
+      <workItem from="1675273795575" duration="459000" />
+      <workItem from="1675284648720" duration="82000" />
+      <workItem from="1675284855072" duration="791000" />
+      <workItem from="1676490929490" duration="1513000" />
+      <workItem from="1677142891742" duration="1143000" />
+      <workItem from="1679595222621" duration="133000" />
+      <workItem from="1679748423377" duration="364000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ps1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

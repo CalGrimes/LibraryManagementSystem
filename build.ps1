@@ -2,8 +2,6 @@
 $work = $pwd
 $binaries = "..\bin\"
 
-# Install jOOQ binaries.
-Set-Location -Path ".\lib\jOOQ-3.17.6\"
 .\maven-install.bat
 Set-Location -Path $work
 
